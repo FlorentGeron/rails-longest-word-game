@@ -1,0 +1,9 @@
+<div class="container">
+   <h2>You tried <%=@attempt%></h2>
+  <h1><%= @result[:message] %></h1>
+  <p> Your score is <%= @result[:score].round() %> </p>
+  <p> And you took <%= @result[:time].round() %> seconds to do so well!</p>
+  <%= link_to new_path do%>
+    <div class=button_tile>PLAY AGAIN</div>
+  <%end%>
+</div>
